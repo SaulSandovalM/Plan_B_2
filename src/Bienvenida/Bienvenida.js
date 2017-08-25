@@ -3,6 +3,8 @@ import {AppRegistry, StyleSheet, Text, View, Image} from 'react-native';
 import Video from 'react-native-video';
 import {Button} from 'native-base';
 import {Actions} from 'react-native-router-flux';
+import video from '../assets/video.mp4';
+import img from '../assets/planb.png';
 
 class Bienvenida extends Component {
   render() {
@@ -10,7 +12,7 @@ class Bienvenida extends Component {
       <View style={styles.container}>
 
         <Video
-          source={require('../assets/video.mp4')}
+          source={video}
           rate={1.0}
           muted={true}
           resizeMode={"cover"}
@@ -18,7 +20,7 @@ class Bienvenida extends Component {
           style={styles.video}/>
 
         <View style={styles.content}>
-          <Image source={require('../assets/planb.png')} style={styles.img}/>
+          <Image source={img} style={styles.img}/>
           <Text style={styles.text}>"La pasión construye negocios. El miedo no."</Text>
           <Button rounded block style={styles.buttonIngreso} onPress={() => Actions.Terminos()}>
             <Text style={styles.boton}>EMPECEMOS</Text>
@@ -44,6 +46,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'transparent'
   },
   text: {
