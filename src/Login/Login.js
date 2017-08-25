@@ -65,14 +65,15 @@ class Login extends Component {
   onButtonPress() {
     const {email, contraseña} = this.state;
     this.setState({error: ''});
-    firebaseAuth.signInWithEmailAndPassword(email, contraseña).then(this.onLoginSuccess)
-    .catch(this.onLoginFailed);
+    firebaseAuth.signInWithEmailAndPassword(email, contraseña).then(this.onLoginSuccess).catch(this.onLoginFailed);
+
   }
   onButtonPressReg() {
     const {email, contraseña} = this.state;
     this.setState({error: ''});
     firebaseAuth.createUserWithEmailAndPassword(this.state.email, this.state.contraseña).then(this.onLoginSuccess)
     .catch(this.onLoginFailedReg);
+
   }
 
   onLoginFailed() {
@@ -101,8 +102,8 @@ class Login extends Component {
         </View>
 
         <Item rounded style={styles.inputRounded}>
-          <Input style={styles.input} autoCapitalize='none' placeholder='Correo electrónico' keyboardType='email-address'
-            placeholderTextColor='black' returnKeyType='next' value={this.state.text}
+          <Input style={styles.input} autoCapitalize='none' placeholder='Correo electrónico'
+            keyboardType='email-address' placeholderTextColor='black' returnKeyType='next' value={this.state.text}
             onChangeText={email => this.setState({email})}/>
         </Item>
 

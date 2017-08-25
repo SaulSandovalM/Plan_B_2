@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {firebaseAuth} from './Firebase';
+import {firebaseAuth} from '../Firebase/Firebase';
 import {Actions} from 'react-native-router-flux';
-import Inicio from './Inicio';
+import Inicio from '../Inicio/Inicio';
 import Login from './Login';
 
 class Log extends Component {

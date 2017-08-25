@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "859706632789",
+    "firebase_url": "https://planb-cfb30.firebaseio.com",
+    "project_id": "planb-cfb30",
+    "storage_bucket": "planb-cfb30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859706632789:android:3577c7bce2900603",
+        "android_client_info": {
+          "package_name": "com.plan_b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859706632789-nbhn7emronavm8fbjc8avt4jkv28n6s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYluH1xgRgCsjrX_-W8vFigMGYptjOC5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {Router, Scene} from 'react-native-router-flux';
 import Bienvenida from '../Bienvenida/Bienvenida';
 import Terminos from '../Terminos/Terminos';
+import Log from '../Login/Log';
+import Login from '../Login/Login';
+import Inicio from '../Inicio/Inicio';
 {/*
-import Log from './Log';
-import Login from './Login';
-import Inicio from './Inicio';
 import Ingresos from './Ingresos';
 import Gastos from './Gastos';
 import Ahorros from './Ahorros';
@@ -23,10 +23,10 @@ const Routes = () => {
       <Scene key="root">
         <Scene key="Bienvenida" header={null} component={Bienvenida} initial/>
         <Scene key="Terminos" header={null} component={Terminos}/>
-        {/*
         <Scene key="Log" header={null} component={Log}/>
         <Scene key="Login" header={null} component={Login} />
         <Scene key="Inicio" header={null} component={Inicio}/>
+    {/*
         <Scene key="IngresosIntro" header={null} component={IngresosIntro} />
         <Scene key="GastosIntro" header={null} component={GastosIntro}/>
         <Scene key="Perfil" header={null} component={Perfil}/>

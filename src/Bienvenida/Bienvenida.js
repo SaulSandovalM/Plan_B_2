@@ -3,7 +3,7 @@ import {AppRegistry, StyleSheet, Text, View, Image} from 'react-native';
 import Video from 'react-native-video';
 import {Button} from 'native-base';
 import {Actions} from 'react-native-router-flux';
-import video from '../assets/video.mp4';
+import video from '../assets/video1.mp4';
 import img from '../assets/planb.png';
 
 class Bienvenida extends Component {
