@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, BackHandler} from 'react-native';
-import {CheckBox, Button, Body, List, CardItem, ListItem, Container, Content, Text, Item} from 'native-base';
+import {CheckBox, Button, Body, List, CardItem, ListItem, Container, Content, Text} from 'native-base';
 import {Actions} from 'react-native-router-flux';
 import CabeceraTer from './CabeceraTer';
 
